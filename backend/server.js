@@ -5,7 +5,7 @@ const { GoogleGenAI } = require('@google/genai');
 
 const app = express();
 //app.use(cors());
-const allowedOrigin = process.env.FRONTEND_URL || 'http://localhost:3000';
+const allowedOrigin = process.env.FRONTEND_URL || 'https://rewrite-your-sentence-xraf.vercel.app';
 app.use(cors({ origin: allowedOrigin }));
 app.use(express.json());
 
