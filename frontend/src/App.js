@@ -83,7 +83,7 @@ import React, { useState } from 'react';
 import './App.css';
 
 const MAX_WORDS = 100;
-const API_URL = 'http://localhost:5000/api/rewrite';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api/rewrite';
 
 const BUTTONS = [
   { label: 'Professional', tone: 'professional' },
