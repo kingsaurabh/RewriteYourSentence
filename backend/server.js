@@ -4,10 +4,10 @@ const cors = require('cors');
 const { GoogleGenAI } = require('@google/genai');
 
 const app = express();
-//app.use(cors());
-const allowedOrigin = process.env.FRONTEND_URL || 'https://rewrite-your-sentence-xraf.vercel.app';
+app.use(cors());
+/*const allowedOrigin = process.env.FRONTEND_URL || 'https://rewrite-your-sentence-xraf.vercel.app';
 app.use(cors({ origin: allowedOrigin }));
-app.use(express.json());
+app.use(express.json());*/
 
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
